@@ -1,0 +1,36 @@
+<div class="col-md-3">
+    <div class="nav flex-column nav-pills bg-light aria-orientation='vertical'">
+        <a href="{% url 'dashboard' %}" class="nav-link text-dark {% if '/dashboard/' == request.path %} bg-warning {% endif %}">Dashboard</a>
+        <a href="{% url 'categories' %}" class="nav-link text-dark {% if '/categories/' in request.path %} bg-warning {% endif %}">Categories</a>
+        <a href="">Posts</a>
+        <a href="">Logout</a>
+
+    </div>
+</div>
+
+
+
+<!-- <div class="row">
+    <div class="col">
+        <div class="card  border-default mb-3">
+            <div class="card-header text-center text-uppercase font-weight-bold">
+                <h3 class="text-dark">All Categories</h3> 
+            </div>
+            <div class="card-body text-dark">
+                <h5 class="card-tittle text-center">{{ category_counts }}</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col">
+        <div class="card  border-default mb-3">
+            <div class="card-header text-center text-uppercase font-weight-bold">
+                <h3 class="text-dark">All Posts</h3> 
+            </div>
+            <div class="card-body text-dark">
+                <h5 class="card-tittle text-center">{{ blogs_counts }}</h5>
+            </div>
+        </div>
+    </div>
+</div> -->
